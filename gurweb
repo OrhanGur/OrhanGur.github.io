@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GÜR WEB TASARIM</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+      }
+      #showcase {
+        background-image: url("home-bg.jpeg");
+        background-position: center;
+        height: 500px;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .main-header {
+        background-color: rgb(6, 2, 37);
+        padding: 8px 16px;
+      }
+      .main-nav {
+        display: inline-block;
+        width: calc(100% - 83px);
+        text-align: right;
+        font-family: "Roboto", sans-serif;
+      }
+      .main-nav__items {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .main-nav__item {
+        display: inline-block;
+        margin: 0 10px;
+      }
+
+      .main-header__logo {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 21px;
+      }
+      .main-nav__item a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .main-nav__item a:hover,
+      .main-nav__item:hover::before {
+        color: #2e4c6d;
+      }
+
+      .main-nav__item:active::before,
+      .main-nav__item a:active {
+        color: #fff;
+      }
+      .main-nav__item::before {
+        color: #fff;
+      }
+      .main-nav__item--login a {
+        color: #fff;
+        background-color: #2e4c6d;
+        padding: 4px 16px;
+        border-radius: 8px;
+        border: 2px solid #fff;
+      }
+      .main-nav__item--login a:hover {
+        color: #2e4c6d;
+        border: 2px solid #2e4c6d;
+        background-color: #fff;
+      }
+      .main-nav__item--login::before {
+        content: none;
+      }
+      #how-it-work {
+        background-color: rgb(209, 207, 226);
+        padding: 10px;
+        text-align: center;
+      }
+      #how-it-work h2 {
+        color: #3e4555;
+        font-size: 30px;
+        font-weight: 600px;
+      }
+
+      .row {
+        margin-bottom: 40px;
+      }
+      .col-3 {
+        display: inline-block;
+        width: 30%;
+        padding: 16px;
+        margin: 8px;
+      }
+      .col-2 {
+        display: inline-block;
+        width: calc(50% - 2px);
+        height: 350px;
+        background-color: brown;
+      }
+      .icon-box h3 {
+        color: #3e4555;
+        font-size: 26px;
+      }
+      .icon-box i {
+        color: #030e27;
+      }
+      .features__left {
+        background-image: url(dijital-tasarim.jpg);
+        background-size: cover;
+        background-position: top center;
+      }
+      .features__right {
+        background-color: #7889944d;
+        padding: 40px;
+        vertical-align: top;
+      }
+      .features__right h3 {
+        font-size: 26px;
+      }
+      #features a {
+        background-color: rgb(8, 101, 148);
+        color: black;
+        padding: 7px 15px;
+        text-decoration: none;
+        font-size: 14px;
+        text-align: center;
+        border: 1px solid beige;
+        border-radius: 3px;
+        display: inline-block;
+        margin-top: 15px;
+      }
+      #features a:hover {
+        border: 1px solid rgb(15, 116, 199);
+        color: black;
+        background-color: rgb(232, 240, 243);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="#" class="main-header__logo">GürWeb</a>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="#">Hakkımızda</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Ürünler</a>
+          </li>
+          <li class="main-nav__item main-nav__item--login">
+            <a href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="showcase">
+        <h1>Çok Yakında Hizmetinizde...</h1>
+      </section>
+
+      <section id="how-it-work">
+        <div class="row">
+          <h2>Dijital Tasarım</h2>
+          <p>
+            Dijital Dünyanın Gereksinimi Olan Dijital Kimlikten ve Pazardan
+            Geride Kalmayın. Çözüm Ortağınız GürWeb Size Dijital Dünyanın
+            Kapılarını Sonuna Kadar Açıyor.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="icon-box col-3">
+            <i class="fa-solid fa-people-group fa-2x"></i>
+            <h3>Kurumsal</h3>
+            <p>
+              Kurumsal Web Tasarım Dijital dünyanın trendlerini yakından takip
+              ediyor; modern tasarımlarla talep ve isteklerinize yönelik
+              kullanıcı deneyimi odaklı tasarımlar çıkarıyoruz.
+            </p>
+          </div>
+          <div class="icon-box col-3">
+            <i class="fa-solid fa-cart-shopping fa-2x"></i>
+
+            <h3>E-Ticaret</h3>
+            <p>
+              GürWeb e-ticaret sitenizi ve kurumsal markanızı oluşturarak tüm
+              kurulumları anahtar teslim bitirir. Trendyol, Hepsiburada, N11
+              mağazalarınızı sizin adınıza açar ve sitenizle entegre eder.
+            </p>
+          </div>
+          <div class="icon-box col-3">
+            <i class="fa-solid fa-file-pen fa-2x"></i>
+            <h3>Sosyal Medya</h3>
+            <p>
+              Sosyal medya yönetimi, yayınladığınız içeriği oluşturarak,
+              yayınlayarak ve analiz ederek Facebook, Instagram ve Twitter gibi
+              sosyal medya platformlarında varlığınızı yönetme sürecidir.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="features">
+        <div class="row">
+          <div class="col-2 features__left"></div>
+          <div class="col-2 features__right">
+            <h4>GürWeb Çözüm Ortağınız</h4>
+
+            <h5>İletişim Bilgilerimiz</h5>
+            <p>
+              Barbaros Hayrettin Paşa Mah. 1992 Sokak No:16 Vetro City Kat:10
+              No:209 Şişli / İstanbul
+            </p>
+
+            <a href="#">Teklif Alınız</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
